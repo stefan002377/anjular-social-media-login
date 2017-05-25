@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="website">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Somnoware First Page</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body ng-controller="MainCtrl">
+    <div class="slide slide-animation" ng-if="isCurrentSlideIndex($index)" ng-repeat="slide in slides">
+        <img class="bg" bg-image ng-src="{{slide.src}}">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="sectionleft" height-left>
+                <div class="logo"><img src="images/somnoware.png" alt="somnoware" /></div>
+                <div class="formlogin">
+                    <form action="#" method="get" role="form" ng-show="statuslog">
+                        <fieldset class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Username">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </fieldset>
+                        <input type="submit" class="btn btn-primary" value="Login" />
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"><span>Remember Me</span>
+                            </label>
+                        </div>
+                        <div class="forgotpassword"><a href="#">Forgot password</a></div>
+                        <div class="socialor">OR</div>
+                        <button fb-login type="button" class="btn btn-primary btnfacebook">Facebook Login</button>
+                        <button g-login type="button" class="btn btn-primary btngoogle">Google Login</button>
+                    </form>
+                    <div class="infologin" ng-hide="statuslog">
+                        <img src="{{result.imageUrl}}" alt="">
+                        <h5>{{result.name}}</h5>
+                        <h5>{{result.email}}</h5>
+                        <button ng-click="signout()" type="button" class="btn btn-primary">Sign Out</button>
+                    </div>
+                </div>
+                <div class="footer">@ Somnoware inc. | Help</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular-animate.min.js"></script>
+    <script src="js/angularjs-social-login.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

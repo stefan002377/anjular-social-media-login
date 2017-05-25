@@ -1,0 +1,113 @@
+html {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sectionleft {
+    background: rgba(80, 80, 80, 0.95);
+    text-align: center;
+    width: 350px;
+    color: #ffffff;
+    position: relative;
+}
+
+.logo img {
+    width: 150px;
+    padding: 50px 0;
+}
+
+.formlogin .form-control {
+    padding: 10px 0;
+    margin: 10px 25px;
+    background: none;
+    border: none;
+    width: 300px;
+    border-bottom: 2px solid #666666;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+    color: #eeeeee;
+}
+
+.formlogin .form-control::placeholder {
+    color: #bbbbbb;
+}
+
+.formlogin .form-control:focus {
+    background: none;
+    border-radius: none;
+    box-shadow: none;
+}
+
+.formlogin .btn-primary {
+    padding: 10px 0;
+    margin: 10px 25px;
+    border: none;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+    background: #E14E23;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.formlogin .checkbox {
+    float: left;
+    margin-left: 25px;
+    color: #cccccc;
+    font-size: 12px;
+}
+
+.formlogin .checkbox span {
+    padding: 2px;
+    display: inline-block;
+}
+
+.formlogin .forgotpassword {
+    float: right;
+    margin: 10px 25px;
+    color: #cccccc;
+    font-size: 12px;
+    padding: 2px;
+    display: inline-block;
+}
+
+.formlogin .forgotpassword a {
+    color: #cccccc;
+}
+
+.footer {
+    clear: both;
+    padding: 20px 0;
+    color: #cccccc;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+
+.formlogin .btnfacebook {
+    background: #4267b2;
+}
+
+.formlogin .btngoogle {
+    background: #db4437;
+}
+
+.socialor {
+    font-size: 25px;
+    clear: both;
+}
